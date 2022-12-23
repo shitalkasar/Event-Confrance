@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-      scale=1.0"
+    />
+    <link rel="stylesheet" href="./form.css" />
+    <title>Form </title>
+  </head>
+  <body>
+    <div class="form-validation"></div>
+    <h1>Form</h1>
+
+    <form name="myForm" action="#" method="post">
+      <div id="fname">
+        <input
+          id="inputfname"
+          type="text"
+          name="fname"
+          placeholder="enter your first name"
+          onchange="checkfname(event)"
+        /><b><span class="formerror"></span></b> <br /><br />
+      </div>
+
+      <div>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="enter your Email"
+        /><b><span class="formerror"></span></b><br /><br />
+      </div>
+
+      <div>
+        <input
+          type="number"
+          name="phone"
+          id="phone"
+          placeholder="enter your Mobile number"
+        /><b><span class="formerror"></span></b><br /><br />
+      </div>
+
+      <div id="pass">
+        <input type="password" name="pass" placeholder="enter  password" /><b
+          ><span class="formerror"></span></b
+        ><br /><br />
+      </div>
+    </form>
+
+    <button type="submit" onclick=" validate()">Submit</button><br /><br />
+
+    <table border="1">
+      <thead>
+        <tr>
+          <td>Name</td>
+          <td>Email</td>
+          <td>Mobile</td>
+        </tr>
+      </thead>
+
+      <tbody></tbody>
+    </table>
+
+    <script src="./form.js"></script>
+  </body>
+</html>
+
